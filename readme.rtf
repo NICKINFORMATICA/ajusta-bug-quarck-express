@@ -1,0 +1,24 @@
+Error: File not found -43 while launching QuarkXPress 2015(Windows Only)
+
+Dec 10, 2021Knowledge
+
+Summary:
+
+
+
+An error occurs while launching QuarkXPress 2015 on Windows
+
+
+
+
+
+
+
+Solution:
+
+Login as an Administrator
+Navigate to C:\Program Files\Quark\QuarkXPress 2015.
+Create a new folder and name it 'Preferences'. (Note: This folder is Case-Sensitive).
+In the location as Step 2, open the file settings.xml with notepad.
+Update the file by giving the preferences folder path in between <Win></Win> tags. Example- <Win>C:\Program Files\Quark\QuarkXPress 2015\Preferences</Win>
+Launch QuarkXPress, it will work fine.
