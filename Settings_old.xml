@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration Version="0900" SVGImport="true">
+	<PreferencesLocation>
+		<Win></Win>
+		<Mac></Mac>
+	</PreferencesLocation>
+	<BackupConfig BackupProjects="1" BackupFilesCount="10" BackupPath=""></BackupConfig>
+	<PSToPDFSettings UseJawsForEPSImport="false" PDFSupportsHigherHWResolution="true">
+	</PSToPDFSettings>
+	<PDFFilterSettings GenerateLinearizedPDF="false" UseJawsForDistilling="false">
+	</PDFFilterSettings>
+	<!-- InterpolationQuality - Image interpolation quality, Range from 0 to 10.
+	kInterpolateDefault = 0,							// Default interpolation setting = 5
+	kUseNearest1Pixel = 1,								// 1 point copy - Nearest neigbour interpolation
+	kUseNearest2UnidirectionalPixels = 2,			// 2 points average - 2 Point Linear interpolation
+	kUseNearest4UnidirectionalPixels = 3,			// 4 points average - 4 Point Linear interpolation
+	kUseNearest4IsotropicPixels = 4,					// BiLinear interpolation
+	kUseNearest4IsotropicLinearPixels = 5,			// BiLinear interpolation on Linear interpolated samples - Multi sample interpolation
+	kUseNearest4IsotropicPrefilteredPixels = 6,	// High quality Bilinear interpolation - Apply an image filter then perform Bilinear interpolation
+	kUseNearest8IsotropicPixels = 7,					// TriLinear interpolation
+	kUseNearest16IsotropicPixels = 8,				// Bicubic interpolation
+	kUseNearest16IsotropicPrefilteredPixels = 9,	// High quality Cubic interpolation - Apply an image filter then perform Bicubic interpolation
+	kUseNearest_N_AnisotropicPixels = 10,			// Interpolation on nearest N transformed (not necessarily from a square range) pixel patterns
+	kHighestQualityInterpolation = kUseNearest_N_AnisotropicPixels
+	-->
+	<RenderingQualitySettings InterpolationQuality="0">
+	</RenderingQualitySettings>
+	<!-- UseGPUForRendering and UseGPUForImageCache turns on the GPU usage for screen rendering and image cache generation respectively -->
+	<!--PerformanceSettings UseGPUForRendering ="true" UseGPUForImageCache="true"> </PerformanceSettings-->
+	<!-- Settings for hiding/showing auto hyphenation. Required for indic languages -->
+	<HideAutoHyphenation Devanagari="false" Bengali="false" Gurumukhi="false" Gujarati="false" Kannada="true" Malayalam="true" Oriya="true" Tamil="true" Telugu="true">
+	</HideAutoHyphenation>
+	<FontStyleSettings PreserveTrueTypeFontsInPDFOutput="true">
+	</FontStyleSettings>
+	<!-- IgnoreLineBreakSetting will be used to ignore line break after for below unichars-
+	0x2015,  // AI # HORIZONTAL BAR
+	0x2025, // IN # TWO DOT LEADER
+	0x2026  // IN # HORIZONTAL ELLIPSIS
+	-->
+	<!-- IgnoreLineBreak="true" to ignore line break after above mentioned unichars, by default this option is IgnoreLineBreak="false"
+	Note: This option is applicable only if Auto Hyphenation is disabled in H&J.
+	-->
+	<IgnoreLineBreakSetting IgnoreLineBreak="false">
+	</IgnoreLineBreakSetting>
+	<!--AutoLastLineIndent="true" to automatically calculate the last line indent value for all the TOC entries from right indent of
+	the paragraph style sheet used for TOC formatting. By default this option is true, set it to false to ignore the automatic last
+	line indent calculation and honor the right indent for TOC entries.
+	-->
+	<TOCSettings AutoLastLineIndent="false"></TOCSettings>
+	<!--<LegacyTableStyleSettings MigrateLegacyTableStyles="false"> </LegacyTableStyleSettings>-->
+	<!--DisableFontManagement="true" to disable the font management, default value is "false" -->
+	<!--CollectMasterPageFonts="true" to collect Master Page(s) fonts during CFO, default value is "true" -->
+	<!--CollectStyleFonts="true" to collect fonts used in styles during CFO, default value is "true" -->
+	<FontManagementSetting DisableFontManagement="false" CollectMasterPageFonts="true" CollectStyleFonts="true"></FontManagementSetting>
+	<!--TextStrokeDrawingOrderUISetting StrokeDrawingOrderUI ="False" to disable strokeorder UI, StrokeDrawingOrderUI ="True" -->
+	<!-- to enable strokeorder UI, by default StrokeDrawingOrderUI ="True" -->
+	<TextStrokeDrawingOrderUISetting StrokeDrawingOrderUI="True"></TextStrokeDrawingOrderUISetting>
+	<Activation Concurrency="false" MaxLogSizeInBytes="0">
+		<SkipErrors>
+			<Error Code="0"></Error>
+			<Error Code="-0"></Error>
+		</SkipErrors>
+	</Activation>
+	<Leading OverrideAutoLeading="false"/>
+	<NetworkImageSettings SkipResolving="false"></NetworkImageSettings>
+	<!--SelectTextAndPunctuation="true" to select all text and punctuation characters if cursor
+	position is between text and punctuation characters, default is SelectTextAndPunctuation="false" -->
+	<TextSelection SelectTextAndPunctuation="false"/>
+	<TablesSettings BalanceRowSpan="false" BalanceColumnSpan="false"/>
+	<InAppMessageSettings Staging="false"/>
+</Configuration>
